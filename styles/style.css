@@ -1,0 +1,45 @@
+:root {
+    --snakeSize: calc(1vh + 1vw);
+}
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: rgb(182, 129, 32);
+}
+.cell {
+    width: var(--snakeSize);
+    height: var(--snakeSize);
+    background-color: rgb(5, 167, 100);
+}
+.row {
+    display: flex;
+}
+.snake {
+    background-color: rgb(56, 56, 56);
+}
+
+.food {
+    background-color: greenyellow;
+}
+
+.score {
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.board {
+    position: relative;
+    border: 2px solid black;
+}
+.game-info {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
